@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111315">
+<title>Fitters Black Book</title>
+<style>
+:root{--bg:#101214;--panel:#191d20;--panel2:#202529;--line:#30383d;--text:#edf1f2;--muted:#9aa6ac;--accent:#e58a32;--accent2:#ffb45f;--green:#79c69a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button,input,select{font:inherit}button{cursor:pointer}.shell{display:grid;grid-template-columns:260px 1fr;min-height:100vh}.sidebar{background:#15191b;border-right:1px solid var(--line);padding:24px 16px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}.brand{display:flex;gap:12px;align-items:center;padding:0 10px 25px}.mark{width:42px;height:42px;border:2px solid var(--accent);border-radius:10px;display:grid;place-items:center;color:var(--accent);font-weight:900;font-size:20px}.brand strong{display:block;letter-spacing:.04em;font-size:14px}.brand small{color:var(--muted);font-size:11px;letter-spacing:.15em;text-transform:uppercase}.nav-label{font-size:10px;color:#718087;letter-spacing:.16em;text-transform:uppercase;padding:15px 12px 7px}.nav button{width:100%;border:0;background:transparent;color:#b7c0c4;text-align:left;padding:11px 12px;border-radius:8px;margin:2px 0}.nav button:hover,.nav button.active{background:#292f33;color:#fff}.nav button.active{box-shadow:inset 3px 0 var(--accent)}.side-note{margin-top:auto;border:1px solid var(--line);border-radius:10px;padding:13px;color:var(--muted);font-size:12px}.main{min-width:0}.topbar{height:68px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 34px;background:#121517}.crumb{font-size:13px;color:var(--muted)}.status{font-size:11px;color:var(--green);border:1px solid #345744;padding:5px 9px;border-radius:20px}.content{max-width:1200px;margin:auto;padding:34px}.eyebrow{color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}.hero{background:linear-gradient(120deg,#252b2e,#171b1e 65%);border:1px solid #394147;border-radius:16px;padding:34px;position:relative;overflow:hidden}.hero:after{content:"FB";position:absolute;right:34px;top:12px;font-size:150px;font-weight:900;color:#ffffff08;letter-spacing:-.12em}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.05;max-width:680px;margin:12px 0}.hero p{max-width:620px;color:#b7c1c5}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.btn{border:1px solid var(--line);background:var(--panel2);color:var(--text);padding:10px 15px;border-radius:8px;font-weight:650}.btn.primary{background:var(--accent);border-color:var(--accent);color:#171717}.btn:hover{filter:brightness(1.12)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin:30px 0 14px}.section-head h2{margin:0;font-size:21px}.section-head p{margin:4px 0 0;color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.tile,.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:17px}.tile{min-height:130px;cursor:pointer;transition:.15s}.tile:hover{border-color:#8a5b30;transform:translateY(-2px)}.tile .ico{font-size:22px}.tile h3{font-size:15px;margin:9px 0 3px}.tile p{font-size:12px;color:var(--muted);margin:0}.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.stat strong{font-size:25px;display:block}.stat span{font-size:12px;color:var(--muted)}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.field{background:#111517;color:var(--text);border:1px solid var(--line);padding:11px 12px;border-radius:8px;min-width:0}.search{flex:1;min-width:190px}.item{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.item h3{margin:0 0 5px;font-size:16px}.item p{margin:0;color:var(--muted);font-size:13px}.item+.item{margin-top:10px}.pin{border:1px solid var(--line);background:transparent;color:var(--accent2);border-radius:8px;padding:7px 10px;white-space:nowrap}.pin.saved{background:#3b2a19;border-color:#81562c}.tag{display:inline-block;color:var(--accent2);background:#352719;border:1px solid #624426;border-radius:20px;padding:3px 8px;font-size:10px;margin-bottom:8px}.hidden{display:none!important}.page-title{margin:0 0 6px;font-size:30px}.sub{color:var(--muted);margin:0 0 20px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:10px}table{border-collapse:collapse;width:100%;min-width:480px}th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);font-size:13px}th{background:#22282c;color:#cbd2d5;font-size:11px;text-transform:uppercase;letter-spacing:.08em}td{color:#dce1e3}tr:last-child td{border-bottom:0}.calc{max-width:600px}.calc label{display:block;color:var(--muted);font-size:12px;margin:12px 0 5px}.calc input,.calc select{width:100%}.result{background:#29251f;border:1px solid #654827;border-radius:10px;padding:15px;margin-top:15px}.result strong{font-size:25px;color:var(--accent2)}.notice{background:#202529;border-left:3px solid var(--accent);padding:12px 14px;color:#bac4c8;font-size:12px;border-radius:5px;margin:18px 0}.footer{color:#718087;font-size:11px;margin:35px 0 10px;border-top:1px solid var(--line);padding-top:16px}.mobile-menu{display:none}
+@media(max-width:850px){.shell{grid-template-columns:1fr}.sidebar{position:fixed;z-index:10;left:-280px;width:260px;transition:.2s;box-shadow:10px 0 40px #0008}.sidebar.open{left:0}.mobile-menu{display:inline-block}.topbar{padding:0 18px}.content{padding:22px 17px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:25px}.hero:after{right:12px;font-size:100px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.statrow{grid-template-columns:1fr 1fr}.hero h1{font-size:32px}.status{display:none}.section-head{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar" id="sidebar">
+ <div class="brand"><div class="mark">FB</div><div><strong>FITTERS BLACK BOOK</strong><small>Practical know-how</small></div></div>
+ <div class="nav-label">Workspace</div>
+ <nav class="nav">
+  <button class="active" data-page="dashboard">▦ &nbsp; Dashboard</button>
+  <button data-page="library">▤ &nbsp; The Library</button>
+  <button data-page="threads">⌁ &nbsp; Thread Charts</button>
+  <button data-page="calculators">∑ &nbsp; Calculators</button>
+  <button data-page="pinned">☆ &nbsp; My Bench</button>
+ </nav>
+ <div class="nav-label">More</div>
+ <nav class="nav"><button data-page="pricing">◇ &nbsp; Membership</button><button data-page="about">ⓘ &nbsp; About this prototype</button></nav>
+ <div class="side-note">A practical technical reference for fitters across industries.<br><br><span style="color:var(--accent2)">PROTOTYPE 1.0</span> · Local demo</div>
+</aside>
+<main class="main">
+ <header class="topbar"><div style="display:flex;align-items:center;gap:12px"><button class="btn mobile-menu" id="menuBtn">☰</button><span class="crumb" id="crumb">Workspace / Dashboard</span></div><span class="status">● Prototype running</span></header>
+ <div class="content">
+  <section id="dashboard" class="page">
+   <div class="hero"><div class="eyebrow">The fitter's practical reference</div><h1>Knowledge you can take to the workshop.</h1><p>Technical references, practical processes and useful tools in one place. Built for fitters across mechanical, maintenance, hydraulic, pneumatic and industrial trades.</p><div class="actions"><button class="btn primary" data-go="library">Explore the Library →</button><button class="btn" data-go="calculators">Open calculators</button></div></div>
+   <div class="statrow"><div class="card stat"><strong>10</strong><span>Library categories</span></div><div class="card stat"><strong id="pinCount">0</strong><span>Pinned references</span></div><div class="card stat"><strong>24/7</strong><span>Quick access demo</span></div></div>
+   <div class="section-head"><div><h2>Explore your workspace</h2><p>Jump straight into the tools and references.</p></div></div>
+   <div class="grid">
+    <div class="tile" data-go="library"><div class="ico">▤</div><h3>The Library</h3><p>Browse practical technical knowledge.</p></div>
+    <div class="tile" data-go="threads"><div class="ico">⌁</div><h3>Thread Charts</h3><p>Quick reference for common thread forms.</p></div>
+    <div class="tile" data-go="calculators"><div class="ico">∑</div><h3>Calculators</h3><p>Useful workshop calculations.</p></div>
+    <div class="tile" data-go="pinned"><div class="ico">☆</div><h3>My Bench</h3><p>Your saved quick-reference items.</p></div>
+    <div class="tile" data-go="pricing"><div class="ico">◇</div><h3>Membership</h3><p>Preview the proposed membership tiers.</p></div>
+    <div class="tile" data-go="about"><div class="ico">ⓘ</div><h3>About the prototype</h3><p>Understand what is and isn't connected yet.</p></div>
+   </div>
+  </section>
+  <section id="library" class="page hidden">
+   <div class="eyebrow">Technical knowledge base</div><h1 class="page-title">The Library</h1><p class="sub">Browse the ten core knowledge areas. Pin useful topics to My Bench.</p>
+   <div class="toolbar"><input class="field search" id="libSearch" placeholder="Search categories and topics…"></div><div class="grid" id="libraryGrid"></div>
+  </section>
+  <section id="threads" class="page hidden">
+   <div class="eyebrow">Workshop reference</div><h1 class="page-title">Thread Charts</h1><p class="sub">A starter reference table for common metric coarse threads.</p>
+   <div class="notice">Prototype data only. Always confirm thread standards, pitch, tolerances and fastener requirements against the applicable standard, drawing or manufacturer documentation before use.</div>
+   <div class="toolbar"><input class="field search" id="threadSearch" placeholder="Search thread size…"></div>
+   <div class="table-wrap"><table id="threadTable"><thead><tr><th>Thread</th><th>Major diameter</th><th>Coarse pitch</th><th>Tap drill (guide)</th></tr></thead><tbody></tbody></table></div>
+  </section>
+  <section id="calculators" class="page hidden">
+   <div class="eyebrow">Workshop tools</div><h1 class="page-title">Calculators</h1><p class="sub">Simple interactive tools for common workshop calculations.</p>
+   <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+    <div class="card calc"><h3>Metric / imperial conversion</h3><p class="sub">Convert millimetres and inches.</p><label>Value</label><input class="field" id="convValue" type="number" step="any" value="25.4"><label>Convert from</label><select class="field" id="convMode"><option value="mm">Millimetres (mm) to inches</option><option value="in">Inches to millimetres (mm)</option></select><div class="result"><span>Result</span><br><strong id="convResult">1.0000 in</strong></div></div>
+    <div class="card calc"><h3>Circle circumference</h3><p class="sub">Calculate circumference from diameter.</p><label>Diameter (mm)</label><input class="field" id="diameter" type="number" min="0" step="any" value="100"><div class="result"><span>Circumference</span><br><strong id="circResult">314.16 mm</strong></div></div>
+    <div class="card calc"><h3>Rotational speed</h3><p class="sub">Estimate RPM from surface speed and diameter.</p><label>Surface speed (m/min)</label><input class="field" id="surface" type="number" min="0" step="any" value="30"><label>Diameter (mm)</label><input class="field" id="rpmDiameter" type="number" min="0" step="any" value="50"><div class="result"><span>Calculated speed</span><br><strong id="rpmResult">191 RPM</strong></div></div>
+   </div>
+   <div class="notice">These are general-purpose mathematical tools, not engineering approval. Check units, assumptions, material limits, machine limits and applicable procedures before acting on a result.</div>
+  </section>
+  <section id="pinned" class="page hidden">
+   <div class="eyebrow">Your quick-access shelf</div><h1 class="page-title">My Bench</h1><p class="sub">References you pin are saved in this browser on this device.</p><div id="pinnedList"></div>
+  </section>
+  <section id="pricing" class="page hidden">
+   <div class="eyebrow">Membership preview</div><h1 class="page-title">Choose your level of access</h1><p class="sub">These are proposed Fitters Black Book membership options, not active subscriptions.</p>
+   <div class="grid">
+    <div class="card"><span class="tag">START HERE</span><h2>Basic</h2><h2>Free</h2><p class="sub">Core access for getting started.</p><ul><li>Selected Library content</li><li>Selected reference charts</li><li>Basic workshop tools</li></ul><button class="btn" disabled>Prototype only</button></div>
+    <div class="card" style="border-color:#8a5b30"><span class="tag">MOST FLEXIBLE</span><h2>Pro Monthly</h2><h2>$9.99 <small style="font-size:13px;color:var(--muted)">AUD / month</small></h2><p class="sub">For regular workshop reference.</p><ul><li>Expanded technical Library</li><li>Reference charts and calculators</li><li>Save personal references</li><li>Proposed 7-day trial</li></ul><button class="btn" disabled>Prototype only</button></div>
+    <div class="card"><span class="tag">BEST VALUE</span><h2>Pro Annual</h2><h2>$79 <small style="font-size:13px;color:var(--muted)">AUD / year</small></h2><p class="sub">Full-year access.</p><ul><li>Pro features</li><li>Annual membership</li><li>Proposed 7-day trial</li></ul><button class="btn" disabled>Prototype only</button></div>
+   </div>
+  </section>
+  <section id="about" class="page hidden">
+   <div class="eyebrow">Important prototype information</div><h1 class="page-title">About this build</h1><p class="sub">This is an early, locally functioning prototype to test the layout and user experience.</p>
+   <div class="card"><h3>What works in this version</h3><ul><li>Responsive navigation and page layouts</li><li>Library category browsing and search</li><li>Pin and unpin demo references using browser storage</li><li>Metric / imperial conversion</li><li>Circle circumference calculation</li><li>Rotational speed calculation</li><li>Searchable starter thread chart</li></ul><h3>What is not connected yet</h3><ul><li>No user accounts or login</li><li>No cloud database or cross-device syncing</li><li>No payment processing or live subscriptions</li><li>Library entries are starter placeholders, not complete technical articles</li><li>Thread data is illustrative starter data and must be verified before workshop use</li></ul></div>
+   <div class="notice">Safety and accuracy: this prototype is for demonstration and general information only. It is not a substitute for approved engineering documentation, workplace procedures, competent assessment or applicable standards.</div>
+  </section>
+  <div class="footer">FIT­TERS BLACK BOOK · PROTOTYPE 1.0 · Technical information must be independently verified before use. <span style="float:right">Terms · Privacy · Safety</span></div>
+ </div>
+</main>
+</div>
+<script>
+const categories=[
+["Components & Mechanical Systems","Bearings, couplings, gears, seals and mechanical components.","⚙","Component identification; Fits and clearances; Power transmission"],
+["Workshop Processes","Practical procedures and workshop methods.","🛠","Assembly and disassembly; Fasteners and torque; Workshop practices"],
+["Measuring & Metrology","Measurement tools, methods and accuracy.","📏","Micrometers and verniers; Dial indicators; Measurement principles"],
+["Engineering Drawings & Schematics","Understand technical drawings and symbols.","📐","Drawing conventions; Fits and tolerances; Hydraulic symbols"],
+["Materials & Specifications","Material properties, grades and selection.","🧱","Material identification; Steel grades; Material properties"],
+["Mechanical Maintenance","Inspection, servicing and fault finding.","🔧","Preventive maintenance; Condition monitoring; Fault diagnosis"],
+["Hydraulic Systems","Hydraulic components and system fundamentals.","💧","Pumps and motors; Valves; Cylinders and circuits"],
+["Pneumatic Systems","Compressed-air components and circuits.","〰","Air preparation; Directional valves; Actuators"],
+["Formulas & Calculations","Useful engineering maths and workshop formulas.","∑","Unit conversions; Geometry; Rotational speed"],
+["Technical Knowledge & Glossary","Definitions, terminology and practical explanations.","📚","Workshop terminology; Engineering definitions; Technical principles"]
+];
+const threadData=[["M3",3,0.5,2.5],["M4",4,0.7,3.3],["M5",5,0.8,4.2],["M6",6,1.0,5.0],["M8",8,1.25,6.8],["M10",10,1.5,8.5],["M12",12,1.75,10.2],["M14",14,2.0,12.0],["M16",16,2.0,14.0],["M18",18,2.5,15.5],["M20",20,2.5,17.5],["M24",24,3.0,21.0]];
+const pinsKey="fbb-prototype-pins-v1";let pins=JSON.parse(localStorage.getItem(pinsKey)||"[]");
+function savePins(){localStorage.setItem(pinsKey,JSON.stringify(pins));document.getElementById("pinCount").textContent=pins.length}
+function go(page){document.querySelectorAll(".page").forEach(x=>x.classList.add("hidden"));document.getElementById(page).classList.remove("hidden");document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("active",b.dataset.page===page));document.getElementById("crumb").textContent="Workspace / "+({dashboard:"Dashboard",library:"The Library",threads:"Thread Charts",calculators:"Calculators",pinned:"My Bench",pricing:"Membership",about:"About"}[page]||page);document.getElementById("sidebar").classList.remove("open");if(page==="pinned")renderPins();window.scrollTo(0,0)}
+document.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.page)));
+document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.go)));
+document.getElementById("menuBtn").addEventListener("click",()=>document.getElementById("sidebar").classList.toggle("open"));
+function pinButton(id){let on=pins.includes(id);return `<button class="pin ${on?"saved":""}" data-pin="${id}">${on?"★ Pinned":"☆ Pin to My Bench"}</button>`}
+function wirePins(){document.querySelectorAll("[data-pin]").forEach(b=>b.addEventListener("click",()=>{let id=b.dataset.pin;pins=pins.includes(id)?pins.filter(x=>x!==id):[...pins,id];savePins();renderLibrary();if(!document.getElementById("pinned").classList.contains("hidden"))renderPins()}))}
+function renderLibrary(){let q=(document.getElementById("libSearch").value||"").toLowerCase();document.getElementById("libraryGrid").innerHTML=categories.map((c,i)=>({c,i})).filter(({c})=>(c.join(" ").toLowerCase().includes(q))).map(({c,i})=>`<div class="card"><div class="item"><div><div style="font-size:23px">${c[2]}</div><h3>${c[0]}</h3><p>${c[1]}</p></div>${pinButton("cat-"+i)}</div><p style="font-size:12px;color:#c1c9cc;margin-top:14px">${c[3].split(";").join(" · ")}</p></div>`).join("");wirePins()}
+function renderPins(){let entries=pins.map(id=>{if(id.startsWith("cat-")){let c=categories[+id.slice(4)];return c?{id,title:c[0],desc:c[1]}:null}return null}).filter(Boolean);document.getElementById("pinnedList").innerHTML=entries.length?entries.map(e=>`<div class="card item"><div><h3>${e.title}</h3><p>${e.desc}</p></div>${pinButton(e.id)}</div>`).join(""):`<div class="card"><h3>Your bench is clear.</h3><p class="sub">Visit The Library and pin a category to keep it handy here.</p><button class="btn primary" data-go="library">Browse the Library</button></div>`;document.querySelectorAll("#pinnedList [data-go]").forEach(b=>b.addEventListener("click",()=>go("library")));wirePins()}
+document.getElementById("libSearch").addEventListener("input",renderLibrary);
+function renderThreads(){let q=(document.getElementById("threadSearch").value||"").toLowerCase();document.querySelector("#threadTable tbody").innerHTML=threadData.filter(r=>r.join(" ").toLowerCase().includes(q)).map(r=>`<tr>${r.map((v,i)=>`<td>${i===1||i===3?v.toFixed(1):v}</td>`).join("")}</tr>`).join("")}
+document.getElementById("threadSearch").addEventListener("input",renderThreads);
+function calc(){let v=Number(document.getElementById("convValue").value),mode=document.getElementById("convMode").value;document.getElementById("convResult").textContent=Number.isFinite(v)?(mode==="mm"?(v/25.4).toFixed(4)+" in":(v*25.4).toFixed(3)+" mm"):"—";let d=Number(document.getElementById("diameter").value);document.getElementById("circResult").textContent=d>=0&&Number.isFinite(d)?(Math.PI*d).toFixed(2)+" mm":"—";let s=Number(document.getElementById("surface").value),rd=Number(document.getElementById("rpmDiameter").value);document.getElementById("rpmResult").textContent=s>=0&&rd>0&&Number.isFinite(s)&&Number.isFinite(rd)?Math.round((1000*s)/(Math.PI*rd))+" RPM":"—"}
+["convValue","convMode","diameter","surface","rpmDiameter"].forEach(id=>document.getElementById(id).addEventListener("input",calc));
+renderLibrary();renderThreads();calc();savePins();
+</script>
+</body></html>
